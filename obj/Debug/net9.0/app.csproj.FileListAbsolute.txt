@@ -26,3 +26,4 @@ C:\Users\nanae\OneDrive\Desktop\DCIT318-ASS1\Grade Calculator\obj\Debug\net9.0\r
 C:\Users\nanae\OneDrive\Desktop\DCIT318-ASS1\Grade Calculator\obj\Debug\net9.0\app.pdb
 C:\Users\nanae\OneDrive\Desktop\DCIT318-ASS1\Grade Calculator\obj\Debug\net9.0\app.genruntimeconfig.cache
 C:\Users\nanae\OneDrive\Desktop\DCIT318-ASS1\Grade Calculator\obj\Debug\net9.0\ref\app.dll
+C:\Users\nanae\OneDrive\Desktop\DCIT318-ASS1\Grade Calculator\obj\Debug\net9.0\app.sourcelink.json
