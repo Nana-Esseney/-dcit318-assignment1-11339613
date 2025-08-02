@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\nanae\\OneDrive\\Desktop\\DCIT318-ASS1\\Grade Calculator\\app.csproj": {}
+    "C:\\Users\\nanae\\OneDrive\\Desktop\\DCIT318-ASS1\\DCIT318-ASS-1\\app.csproj": {}
   },
   "projects": {
-    "C:\\Users\\nanae\\OneDrive\\Desktop\\DCIT318-ASS1\\Grade Calculator\\app.csproj": {
+    "C:\\Users\\nanae\\OneDrive\\Desktop\\DCIT318-ASS1\\DCIT318-ASS-1\\app.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nanae\\OneDrive\\Desktop\\DCIT318-ASS1\\Grade Calculator\\app.csproj",
+        "projectUniqueName": "C:\\Users\\nanae\\OneDrive\\Desktop\\DCIT318-ASS1\\DCIT318-ASS-1\\app.csproj",
         "projectName": "app",
-        "projectPath": "C:\\Users\\nanae\\OneDrive\\Desktop\\DCIT318-ASS1\\Grade Calculator\\app.csproj",
+        "projectPath": "C:\\Users\\nanae\\OneDrive\\Desktop\\DCIT318-ASS1\\DCIT318-ASS-1\\app.csproj",
         "packagesPath": "C:\\Users\\nanae\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nanae\\OneDrive\\Desktop\\DCIT318-ASS1\\Grade Calculator\\obj\\",
+        "outputPath": "C:\\Users\\nanae\\OneDrive\\Desktop\\DCIT318-ASS1\\DCIT318-ASS-1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
