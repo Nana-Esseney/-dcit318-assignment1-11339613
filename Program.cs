@@ -27,11 +27,14 @@ namespace CombinedCalculator
                         TicketPriceCalculator();
                         break;
                     case "3":
+                        TriangleTypeIdentifier();
+                        break;
+                    case "4":
                         continueProgram = false;
                         Console.WriteLine("Thank you for using the Combined Calculator Application!");
                         break;
                     default:
-                        Console.WriteLine("Invalid choice. Please select a valid option (1-3).");
+                        Console.WriteLine("Invalid choice. Please select a valid option (1-4).");
                         break;
                 }
                 
@@ -49,8 +52,9 @@ namespace CombinedCalculator
             Console.WriteLine("Please select a calculator:");
             Console.WriteLine("1. Grade Calculator");
             Console.WriteLine("2. Ticket Price Calculator");
-            Console.WriteLine("3. Exit");
-            Console.Write("Enter your choice (1-3): ");
+            Console.WriteLine("3. Triangle Type Identifier");
+            Console.WriteLine("4. Exit");
+            Console.Write("Enter your choice (1-4): ");
         }
         
         static void GradeCalculator()
@@ -175,6 +179,92 @@ namespace CombinedCalculator
                 return "Senior Citizen (65 and above) - Discounted";
             else
                 return "Regular Adult";
+        }
+        
+        static void TriangleTypeIdentifier()
+        {
+            Console.WriteLine("=== Triangle Type Identifier ===");
+            Console.WriteLine();
+            
+            double side1, side2, side3;
+            
+            // Get first side
+            side1 = GetValidSide("Enter the length of the first side: ");
+            
+            // Get second side
+            side2 = GetValidSide("Enter the length of the second side: ");
+            
+            // Get third side
+            side3 = GetValidSide("Enter the length of the third side: ");
+            
+            // Check if it forms a valid triangle
+            if (IsValidTriangle(side1, side2, side3))
+            {
+                string triangleType = DetermineTriangleType(side1, side2, side3);
+                
+                Console.WriteLine();
+                Console.WriteLine($"Sides: {side1}, {side2}, {side3}");
+                Console.WriteLine($"Triangle Type: {triangleType}");
+            }
+            else
+            {
+                Console.WriteLine();
+                Console.WriteLine($"Error: The sides {side1}, {side2}, {side3} do not form a valid triangle.");
+                Console.WriteLine("The sum of any two sides must be greater than the third side.");
+            }
+        }
+        
+        static double GetValidSide(string prompt)
+        {
+            double side;
+            bool validInput = false;
+            
+            do
+            {
+                Console.Write(prompt);
+                string input = Console.ReadLine();
+                
+                if (double.TryParse(input, out side))
+                {
+                    if (side > 0)
+                    {
+                        validInput = true;
+                    }
+                    else
+                    {
+                        Console.WriteLine("Error: Side length must be positive. Please try again.");
+                        Console.WriteLine();
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("Error: Please enter a valid number.");
+                    Console.WriteLine();
+                }
+            } while (!validInput);
+            
+            return side;
+        }
+        
+        static bool IsValidTriangle(double a, double b, double c)
+        {
+            return (a + b > c) && (a + c > b) && (b + c > a);
+        }
+        
+        static string DetermineTriangleType(double side1, double side2, double side3)
+        {
+            if (side1 == side2 && side2 == side3)
+            {
+                return "Equilateral";
+            }
+            else if (side1 == side2 || side1 == side3 || side2 == side3)
+            {
+                return "Isosceles";
+            }
+            else
+            {
+                return "Scalene";
+            }
         }
     }
 }
